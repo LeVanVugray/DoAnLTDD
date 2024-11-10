@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar với tiêu đề Sửa sản phẩm -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSuaSp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF9800"
+        app:title="Sửa sản phẩm"/>
+
+    <!-- Các trường nhập liệu cho sản phẩm -->
+    <EditText
+        android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"
+        android:text="Tên sản phẩm đã có sẵn" /> <!-- Điền tên sản phẩm cần sửa -->
+
+    <EditText
+        android:id="@+id/edtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm"
+        android:text="100000" /> <!-- Điền giá sản phẩm cần sửa -->
+
+    <EditText
+        android:id="@+id/edtProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả"
+        android:text="Mô tả sản phẩm cũ" /> <!-- Mô tả cũ của sản phẩm -->
+
+    <!-- TextView hiển thị đường dẫn ảnh -->
+    <TextView
+        android:id="@+id/textViewImagePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đường dẫn ảnh: /path/to/image.jpg"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Nút chọn ảnh -->
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ảnh sản phẩm"
+        android:layout_gravity="center"/>
+
+    <!-- Nút để sửa thông tin sản phẩm -->
+    <Button
+        android:id="@+id/btnUpdateProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Cập nhật sản phẩm    "
+        android:layout_gravity="center"/>
+
+</LinearLayout>

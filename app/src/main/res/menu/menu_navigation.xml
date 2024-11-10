@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_qlsp"
+        android:title="Quản lý sản phẩm" />
+    <item
+        android:id="@+id/menu_themsp"
+        android:title="Thêm sản phẩm" />
+    <item
+        android:id="@+id/menu_suasp"
+        android:title="Sửa sản phẩm" />
+    <item
+        android:id="@+id/menu_thoatsp"
+        android:title="Thoát" />
+</menu>

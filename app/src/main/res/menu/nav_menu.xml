@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/ít1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_ql"
+            android:title="Quản lý sản phẩm"/>
+        <item android:id="@+id/nav_sp"
+            android:title="Thêm sản phẩm"/>
+
+    </group>
+    <item android:id="@+id/nav_thoat"
+        android:title="Thoát"/>
+</menu>
