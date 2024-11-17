@@ -42,6 +42,25 @@
         <activity
             android:name=".DangNhapAdmin"
             android:exported="false" />
+
+
+        <activity android:name=".TrangChuGioHang"
+            android:exported="true"/>
+        <activity android:name=".ThanhToan"
+            android:exported="true"/>
+        <activity android:name=".ThongTinNhanHang"
+            android:exported="true"/>
+        <activity android:name=".ThongTinDonHang"
+            android:exported="true"/>
+        <activity android:name=".Xoa"
+            android:exported="true"/>
+        <activity android:name=".PhuongThucThanhToan"
+            android:exported="true"/>
+        <activity android:name=".Chat"
+            android:exported="true"/>
+        <activity android:name=".HuyDon"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity1"
             android:exported="true">
