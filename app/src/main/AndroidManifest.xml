@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".dssanpham"
+            android:exported="false" />
+        <activity
+            android:name=".chitietsanpham"
+            android:exported="false" />
+        <activity
+            android:name=".acount"
+            android:exported="false" />
+        <activity
+            android:name=".trangchu_yeuthich"
+            android:exported="false" />
+        <activity
+            android:name=".thongbao_hiu"
+            android:exported="false" />
+        <activity
+            android:name=".tcthongbao"
+            android:exported="false" />
+        <activity
+            android:name=".trangchu"
+            android:exported="false" />
+        <activity
             android:name=".SuaSpActivity"
             android:exported="false" />
         <activity

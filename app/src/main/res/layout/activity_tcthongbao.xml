@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#F5F5F5">
+
+        <!-- Nút Quay lại -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Quay lại"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TRẺ EM"
+            android:paddingRight="200dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <!-- Nút Thông báo -->
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tb"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Thông báo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true" />
+
+        <!-- Nút Yêu thích -->
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/traitim"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Yêu thích"
+            android:layout_toStartOf="@id/btnNotification"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" />
+
+        <!-- Nút Giỏ hàng -->
+        <ImageButton
+            android:id="@+id/btnCart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/store"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Giỏ hàng"
+            android:layout_toStartOf="@id/btnFavorite"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <!-- Thanh menu trên cùng với Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <!-- Button Nữ -->
+        <Button
+            android:id="@+id/btnWomen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:backgroundTint="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:text="NỮ"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+        <!-- Button Nam -->
+        <Button
+            android:id="@+id/btnMen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:backgroundTint="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:text="NAM"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+        <!-- Button Trẻ em -->
+        <Button
+            android:id="@+id/btnKids"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:backgroundTint="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:text="TRẺ EM"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:padding="10dp" />
+
+        <!-- Button Trẻ sơ sinh -->
+        <Button
+            android:id="@+id/btnBabies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:text="TRẺ SƠ SINH"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Danh sách danh mục -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Mục 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_outerwear"
+                    android:contentDescription="Đồ mặc ngoài" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Đồ Mặc Ngoài"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_outerwear"
+                    android:contentDescription="Đồ mặc ngoài" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Đồ mặc trong"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_outerwear"
+                    android:contentDescription="Đồ mặc ngoài" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="áo thun"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Các mục khác tương tự -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Thanh điều hướng dưới cùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="8dp"
+        >
+
+
+        <!-- Nút Home -->
+
+
+
+            <ImageButton
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"
+                android:contentDescription="Home"
+                android:background="?attr/selectableItemBackground"/>
+
+        <!-- Nút Thoát -->
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/x"
+            android:scaleType="fitCenter"
+            android:contentDescription="Home"
+            android:background="?attr/selectableItemBackground"/>
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/acount"
+            android:scaleType="fitCenter"
+            android:contentDescription="Home"
+            android:background="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+</LinearLayout>

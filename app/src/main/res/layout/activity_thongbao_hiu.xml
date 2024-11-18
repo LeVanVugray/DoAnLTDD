@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Thanh tiêu đề trên cùng -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <!-- Nút Back -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Quay lại"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Tiêu đề Thông báo -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_centerVertical="true"
+            android:text="Thông báo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Nút Thông báo -->
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tb"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Thông báo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" />
+
+        <!-- Nút Yêu thích -->
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/traitim"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Yêu thích"
+            android:layout_toStartOf="@id/btnNotification"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" />
+
+        <!-- Nút Giỏ hàng -->
+        <ImageButton
+            android:id="@+id/btnCart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/store"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Giỏ hàng"
+            android:layout_toStartOf="@id/btnFavorite"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Phần sản phẩm -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Sản phẩm 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="#EFEFEF"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample_product"
+                    android:contentDescription="Sản phẩm 1"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm 1"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá: 145.000đ"
+                        android:textSize="14sp"
+                        android:textColor="#FF0000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sản phẩm khác có thể thêm tại đây -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Thanh điều hướng dưới cùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <!-- Nút Home -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Home"
+            android:padding="8dp" />
+
+        <!-- Nút Tìm kiếm -->
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/seach"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Tìm kiếm"
+            android:padding="8dp" />
+
+        <!-- Nút Account -->
+        <ImageButton
+            android:id="@+id/btnAccount"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/acount"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Tài khoản"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>
